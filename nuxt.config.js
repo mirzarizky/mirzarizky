@@ -1,4 +1,10 @@
+require('dotenv').config()
+
 export default {
+  env: {
+    CONTACT_TELP: process.env.CONTACT_TELP,
+    CONTACT_MAIL: process.env.CONTACT_MAIL
+  },
   mode: 'universal',
   /*
    ** Headers of the page
@@ -43,7 +49,8 @@ export default {
   modules: [
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    'nuxt-webfontloader'
   ],
   /*
    ** Build configuration
@@ -53,5 +60,10 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  webfontloader: {
+    google: {
+      families: ['Work+Sans:400,500,600,700,800', 'Lora:400,500,600,700']
+    }
   }
 }

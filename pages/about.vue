@@ -1,6 +1,6 @@
 <template>
   <div>
-    index here
+    about page
   </div>
 </template>
 

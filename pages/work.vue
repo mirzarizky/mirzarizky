@@ -1,9 +1,11 @@
 <template>
   <div>
-    index here
+    work page
   </div>
 </template>
 
 <script>
 export default {}
 </script>
+
+<style lang="scss" scoped></style>
