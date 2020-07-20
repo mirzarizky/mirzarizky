@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center justify-between px-3 py-6 space-y-1 border-t border-black sm:py-8 sm:space-y-0 sm:border-t-2 xl:px-0 sm:flex-row"
+    class="flex flex-col items-center justify-between px-3 py-6 space-y-1 border-t border-black sm:py-8 sm:space-y-0 sm:border-t-2 xl:px-1 sm:flex-row"
   >
     <nuxt-link
       to="/contact"
@@ -30,7 +30,7 @@
     </nuxt-link>
 
     <div
-      class="flex items-center space-x-1 text-sm font-medium tracking-tight sm:text-base md:text-lg"
+      class="flex items-center space-x-1 text-sm font-medium tracking-normal sm:tracking-tight sm:text-base md:text-lg"
     >
       <a
         rel="noreferrer noopener"

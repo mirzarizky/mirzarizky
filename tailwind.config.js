@@ -18,6 +18,9 @@ module.exports = {
       fontFamily: {
         sans: ['"Work Sans"', 'sans-serif'],
         serif: ['Lora', 'Georgia']
+      },
+      fontSize: {
+        '6xl': '3.5rem'
       }
     }
   },

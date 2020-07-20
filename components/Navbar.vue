@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="flex items-center justify-between px-3 pt-6 pb-6 border-b border-gray-900 sm:border-transparent xl:px-0"
+      class="flex items-center justify-between px-3 pt-6 pb-6 border-b border-gray-900 sm:border-transparent xl:px-1"
     >
       <!-- nav menu -->
       <div class="flex items-center space-x-0 sm:space-x-8">
@@ -93,7 +93,7 @@
       <div
         v-if="isOpen"
         tabindex="0"
-        class="flex flex-col items-center min-h-screen px-3 pt-3 space-y-3 text-center focus:outline-none origintop"
+        class="flex flex-col items-center min-h-screen px-3 pt-3 space-y-3 text-center sm:hidden focus:outline-none origintop"
         @keydown.esc="isOpen = false"
       >
         <nuxt-link
