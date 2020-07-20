@@ -3,7 +3,11 @@ require('dotenv').config()
 export default {
   env: {
     CONTACT_TELP: process.env.CONTACT_TELP,
-    CONTACT_MAIL: process.env.CONTACT_MAIL
+    CONTACT_MAIL: process.env.CONTACT_MAIL,
+    SOCIAL_LINKEDIN_URL: process.env.SOCIAL_LINKEDIN_URL,
+    SOCIAL_TWITTER_URL: process.env.SOCIAL_TWITTER_URL,
+    SOCIAL_INSTAGRAM_URL: process.env.SOCIAL_INSTAGRAM_URL,
+    SOCIAL_GITHUB_URL: process.env.SOCIAL_GITHUB_URL
   },
   mode: 'universal',
   /*
@@ -29,7 +33,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['@/assets/css/hamburgers.scss'],
   /*
    ** Plugins to load before mounting the App
    */
