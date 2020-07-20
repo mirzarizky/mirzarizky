@@ -23,7 +23,11 @@
       <div class="text-base font-medium sm:text-lg md:text-xl">
         Currently located in Bogor, Indonesia. I make web applications, usually
         with Laravel and Vue. I'm currently open for freelance or project-based
-        work. You can contact me at <a :href="'mailto' + mail">{{ mail }}</a
+        work. You can contact me at
+        <a
+          :href="'mailto:' + mail"
+          class="pb-1 transition duration-300 ease-in-out border-b hover:text-hijau border-hijau focus:outline-none focus:border-b-2 focus:text-hijau hover:border-b-2"
+          >{{ mail }}</a
         >.
       </div>
     </div>
