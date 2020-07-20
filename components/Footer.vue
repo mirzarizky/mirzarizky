@@ -1,16 +1,20 @@
 <template>
-  <div class="flex items-center justify-between py-8 border-t-2 border-black">
+  <div
+    class="flex flex-col items-center justify-between px-3 py-6 space-y-1 border-t border-black sm:py-8 sm:space-y-0 sm:border-t-2 xl:px-0 sm:flex-row"
+  >
     <nuxt-link
       to="/contact"
       class="flex items-center space-x-4 focus:outline-none"
     >
-      <div class="text-5xl font-medium leading-tight tracking-tight">
+      <div
+        class="text-3xl font-medium leading-tight tracking-tight sm:text-4xl md:text-5xl"
+      >
         say hello
       </div>
-      <div>
+      <div class="hidden sm:block">
         <svg
           viewBox="0 0 16 16"
-          class="w-12 text-black fill-current"
+          class="text-black fill-current sm:w-10 md:w-12"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
@@ -25,14 +29,18 @@
       </div>
     </nuxt-link>
 
-    <div class="flex items-center space-x-1 text-lg font-medium">
+    <div
+      class="flex items-center space-x-1 text-sm font-medium tracking-tight sm:text-base md:text-lg"
+    >
       <a
+        rel="noreferrer noopener"
         :href="'tel:' + contact.telp"
         class="text-black transition duration-300 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau"
         >{{ contact.telp }}</a
       >
       <div>/</div>
       <a
+        rel="noreferrer noopener"
         :href="'mailto:' + contact.mail"
         class="text-black transition duration-300 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau"
         >{{ contact.mail }}</a
@@ -53,5 +61,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" scoped></style>

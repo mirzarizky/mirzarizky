@@ -80,6 +80,7 @@
         </button>
       </div>
     </div>
+
     <!-- mobile menu -->
     <transition
       enter-active-class="transition-all duration-150 ease-out delay-100"
@@ -98,21 +99,21 @@
         <nuxt-link
           active-class="text-hijau"
           to="/work"
-          class="w-full py-1 transition duration-300 ease-in-out border-b border-gray-300 hover:text-hijau focus:outline-none"
+          class="w-full py-1 transition duration-300 ease-in-out border-b border-gray-300 hover:text-hijau focus:outline-none focus:text-hijau"
           @click.native="visit()"
           >work</nuxt-link
         >
         <nuxt-link
           active-class="text-hijau"
           to="/about"
-          class="w-full py-1 transition duration-300 ease-in-out border-b border-gray-300 hover:text-hijau focus:outline-none"
+          class="w-full py-1 transition duration-300 ease-in-out border-b border-gray-300 hover:text-hijau focus:outline-none focus:text-hijau"
           @click.native="visit()"
           >about</nuxt-link
         >
         <nuxt-link
           active-class="text-hijau"
           to="/contact"
-          class="w-full py-1 transition duration-300 ease-in-out border-b border-gray-300 hover:text-hijau focus:outline-none"
+          class="w-full py-1 transition duration-300 ease-in-out border-b border-gray-300 hover:text-hijau focus:outline-none focus:text-hijau"
           @click.native="visit()"
           >contact</nuxt-link
         >
