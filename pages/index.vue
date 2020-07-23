@@ -31,14 +31,53 @@
         >.
       </div>
     </div>
+
+    <div
+      class="px-4 my-10 text-left md:text-center lg:text-left xl:my-20 sm:px-10 xl:px-24"
+    >
+      <a
+        href="#featured-work"
+        class="text-base font-medium leading-none transition duration-150 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau sm:text-lg md:text-xl"
+      >
+        <div class="inline-flex">
+          featured work
+        </div>
+        <span class="inline-flex">
+          <svg class="w-3 fill-current sm:w-4" viewBox="0 0 20 20">
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <div id="featured-work" class="px-4 pt-4 mt-20 mb-10 xl:px-24">
+      <featured-work :works="featuredWorks" />
+    </div>
   </div>
 </template>
 
 <script>
+import FeaturedWork from '~/components/FeaturedWork'
+
 export default {
+  components: {
+    FeaturedWork
+  },
+  async asyncData({ $content }) {
+    const featuredWorks = await $content('work')
+      .only(['title', 'slug', 'image'])
+      .where({ featured: true })
+      .fetch()
+
+    return { featuredWorks }
+  },
   data() {
     return {
-      iam: ['indonesian.', 'coffee lover.', 'cat person.', 'web developer.'],
+      iam: ['indonesian.', 'coffee lover.', 'iron man.', 'web developer.'],
       mail: process.env.CONTACT_MAIL
     }
   }

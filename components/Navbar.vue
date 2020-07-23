@@ -12,19 +12,19 @@
         <nuxt-link
           to="/work"
           active-class="border-hijau"
-          class="hidden pt-2 font-medium text-black transition duration-300 ease-in-out border-b-2 border-transparent sm:block hover:text-gray-600 focus:border-hijau focus:outline-none hover:border-hijau"
+          class="hidden pt-2 font-medium text-black transition duration-300 ease-in-out border-b-2 border-transparent sm:block hover:text-hijau focus:border-hijau focus:outline-none hover:border-hijau"
           >work</nuxt-link
         >
         <nuxt-link
           to="/about"
           active-class="border-hijau"
-          class="hidden pt-2 font-medium text-black transition duration-300 ease-in-out border-b-2 border-transparent sm:block hover:text-gray-600 focus:border-hijau focus:outline-none hover:border-hijau"
+          class="hidden pt-2 font-medium text-black transition duration-300 ease-in-out border-b-2 border-transparent sm:block hover:text-hijau focus:border-hijau focus:outline-none hover:border-hijau"
           >about</nuxt-link
         >
         <nuxt-link
           to="/contact"
           active-class="border-hijau"
-          class="hidden pt-2 font-medium text-black transition duration-300 ease-in-out border-b-2 border-transparent sm:block hover:text-gray-600 focus:border-hijau focus:outline-none hover:border-hijau"
+          class="hidden pt-2 font-medium text-black transition duration-300 ease-in-out border-b-2 border-transparent sm:block hover:text-hijau focus:border-hijau focus:outline-none hover:border-hijau"
           >contact</nuxt-link
         >
       </div>

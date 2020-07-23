@@ -25,7 +25,23 @@ module.exports = {
     }
   },
   variants: {
-    borderWidth: ['responsive', 'hover', 'focus']
+    alignSelf: ['responsive', 'even', 'odd', 'hover', 'focus'],
+    borderColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    borderWidth: ['responsive', 'hover', 'focus'],
+    scale: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    textDecoration: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover']
   },
-  plugins: []
+  plugins: [],
+  purge: {
+    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+    enabled: process.env.NODE_ENV === 'production',
+    content: [
+      'components/**/*.vue',
+      'layouts/**/*.vue',
+      'pages/**/*.vue',
+      'plugins/**/*.js',
+      'nuxt.config.js'
+    ]
+  }
 }
