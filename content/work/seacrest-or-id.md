@@ -1,9 +1,11 @@
 ---
 title: Seacrest
 image: 
-  thumbnail: https://res.cloudinary.com/mirzarizky/image/upload/v1595514782/work/seacrest/seacrest-thumbnail_oieiok.jpg
-  square: https://res.cloudinary.com/mirzarizky/image/upload/v1595514128/work/seacrest/seacrest-thumbnail-square_jlrxtc.jpg
+  thumbnail: work/seacrest/seacrest-thumbnil_yyqk4a.jpg
+  square: work/seacrest/seacrest-square_bpxywc.jpg
 featured: false
-client: Seacrest
+client: Seacrest Undip
 year: 2018
+prev:
+next: sipaud-id
 ---

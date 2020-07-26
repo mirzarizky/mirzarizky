@@ -2,8 +2,10 @@
 title: SiPAUD
 featured: true
 image: 
-  thumbnail: https://res.cloudinary.com/mirzarizky/image/upload/v1595505558/work/sipaud/sipaud-id_l4ocgc.jpg
-  square: https://res.cloudinary.com/mirzarizky/image/upload/v1595506139/work/sipaud/sipaud-id-square_jemx5r.jpg
-client: Vantura Digital Agency
+  thumbnail: work/sipaud/sipaud-id_l4ocgc.jpg
+  square: work/sipaud/sipaud-id-square_jemx5r.jpg
+client: Vantura Digital
 year: 2019
+prev: seacrest-or-id
+next: maersk-id-all-in-one
 ---

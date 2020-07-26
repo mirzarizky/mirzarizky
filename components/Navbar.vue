@@ -38,7 +38,7 @@
           class="hidden focus:outline-none sm:block"
         >
           <svg
-            class="w-4 h-4 fill-current hover:text-hijau"
+            class="w-4 h-4 text-black transition duration-300 ease-in-out fill-current hover:text-hijau"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
           >
@@ -54,7 +54,7 @@
           class="hidden focus:outline-none sm:block"
         >
           <svg
-            class="w-4 h-4 ml-2 fill-current hover:text-hijau"
+            class="w-4 h-4 ml-2 text-black transition duration-300 ease-in-out fill-current hover:text-hijau"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

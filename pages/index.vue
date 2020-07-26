@@ -33,7 +33,7 @@
     </div>
 
     <div
-      class="px-4 my-10 text-left md:text-center lg:text-left xl:my-20 sm:px-10 xl:px-24"
+      class="px-4 my-10 text-left md:text-center lg:text-left xl:my-24 sm:px-10 xl:px-24"
     >
       <a
         href="#featured-work"
@@ -69,7 +69,7 @@ export default {
   },
   async asyncData({ $content }) {
     const featuredWorks = await $content('work')
-      .only(['title', 'slug', 'image'])
+      .only(['title', 'slug', 'client', 'image'])
       .where({ featured: true })
       .fetch()
 

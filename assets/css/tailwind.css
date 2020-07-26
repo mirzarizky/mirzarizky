@@ -3,3 +3,8 @@
 @import 'tailwindcss/components';
 /* purgecss end ignore */
 @import 'tailwindcss/utilities';
+
+::selection {
+  @apply bg-hijau;
+  @apply text-gray-100;
+}

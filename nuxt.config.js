@@ -1,7 +1,10 @@
 require('dotenv').config()
 
+const APP_TITLE = 'Mirza Rizky — Web Developer'
 export default {
   env: {
+    BASE_URL: process.env.BASE_URL,
+    CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
     CONTACT_TELP: process.env.CONTACT_TELP,
     CONTACT_MAIL: process.env.CONTACT_MAIL,
     SOCIAL_LINKEDIN_URL: process.env.SOCIAL_LINKEDIN_URL,
@@ -14,7 +17,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'Mirza Rizky — Web Developer' || '',
+    title: APP_TITLE,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -22,14 +25,60 @@ export default {
         hid: 'description',
         name: 'description',
         content: process.env.npm_package_description || ''
+      },
+      { hid: 'url', name: 'url', content: process.env.BASE_URL },
+      { hid: 'og:title', property: 'og:title', content: APP_TITLE },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: process.env.npm_package_description
+      },
+      { hid: 'og:url', property: 'og:url', content: process.env.BASE_URL },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: `${process.env.BASE_URL}/social_meta.png`
+      },
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'mirzarizky.me'
+      },
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image'
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@mirzarm' },
+      { hid: 'twitter:creator', name: 'twitter:creator', content: '@mirzarm' },
+      { hid: 'twitter:title', name: 'twitter:title', content: APP_TITLE },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content: process.env.npm_package_description
+      },
+      {
+        hid: 'twitter:image',
+        name: 'twitter:image',
+        content: `${process.env.BASE_URL}/social_meta.png`
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: process.env.BASE_URL
+      }
+    ],
+    bodyAttrs: {
+      class: 'bg-gray-100 text-black antialiased'
+    }
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#88b04b', height: '5px' },
   /*
    ** Global CSS
    */

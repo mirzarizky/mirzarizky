@@ -6,8 +6,13 @@
           v-for="work in works"
           :key="work.slug"
           :to="'work/' + work.slug"
-          class="w-full h-64 bg-center bg-cover focus:outline-none"
-          :style="{ backgroundImage: `url('${work.image.square}')` }"
+          class="w-full h-64 bg-opacity-25 bg-center bg-cover bg-hijau focus:outline-none"
+          :style="{
+            backgroundImage: `url('${cloudinary_url(
+              work.image.square,
+              'fl_progressive'
+            )}')`
+          }"
         >
           <div
             class="flex flex-col items-center justify-center w-full h-full text-center lowercase transition duration-300 ease-in-out bg-opacity-0 bg-hijau hover:bg-opacity-75 group"
@@ -30,9 +35,14 @@
 </template>
 
 <script>
+import cloudinary from '@/mixins/cloudinary'
+
 export default {
+  mixins: [cloudinary],
   async asyncData({ $content, params }) {
-    const works = await $content('work').fetch()
+    const works = await $content('work')
+      .sortBy('year', 'desc')
+      .fetch()
 
     return { works }
   },
