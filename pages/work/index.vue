@@ -18,12 +18,12 @@
             class="flex flex-col items-center justify-center w-full h-full text-center lowercase transition duration-300 ease-in-out bg-opacity-0 bg-hijau hover:bg-opacity-75 group"
           >
             <div
-              class="text-3xl font-semibold tracking-wide transition-all duration-300 ease-in-out delay-75 origin-top scale-y-150 opacity-0 group-hover:scale-y-1 group-hover:opacity-100"
+              class="text-3xl font-semibold tracking-wide transition-all duration-500 ease-in-out delay-75 origin-top transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
             >
               {{ work.title }}
             </div>
             <div
-              class="transition duration-300 ease-in-out delay-75 opacity-0 group-hover:opacity-100"
+              class="transition-all duration-300 ease-in-out delay-150 origin-bottom transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100"
             >
               {{ work.client }}
             </div>

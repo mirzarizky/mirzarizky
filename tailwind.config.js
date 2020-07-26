@@ -30,6 +30,7 @@ module.exports = {
     borderWidth: ['responsive', 'hover', 'focus'],
     scale: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     textDecoration: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    translate: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover']
   },
   plugins: [require('@tailwindcss/typography')],
