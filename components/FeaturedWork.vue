@@ -15,9 +15,7 @@
       <div class="font-sans text-sm lowercase sm:text-base md:text-lg">
         {{ work.client }}
       </div>
-      <div
-        class="text-lg font-semibold border-b-2 border-transparent lg:text-3xl sm:text-xl md:text-2xl"
-      >
+      <div class="text-lg font-semibold lg:text-3xl sm:text-xl md:text-2xl">
         {{ work.title }}
       </div>
       <nuxt-link

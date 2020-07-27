@@ -1,0 +1,21 @@
+{
+  "technical": [
+    "Laravel",
+    "PHP",
+    "HTML",
+    "MySQL",
+    "VueJS",
+    "Javascript",
+    "TailwindCSS",
+    "CSS",
+    "Git",
+    "Docker"
+  ],
+  "software": [
+    "VSCode",
+    "Laragon",
+    "Postman",
+    "GitKraken",
+    "Figma"
+  ]
+}
