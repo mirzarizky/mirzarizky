@@ -7,7 +7,7 @@
         Say Hello
       </h1>
       <div class="text-base font-medium tracking-wide sm:text-lg md:text-xl">
-        For any enquiries, or just to say hello, get in touch and contact me.
+        For any enquiries or just to say hello, get in touch and contact me.
       </div>
       <div class="w-full my-10 xl:my-24 sm:w-3/4">
         <div class="grid grid-cols-1 row-gap-5 sm:row-gap-10 md:grid-cols-2">
@@ -17,7 +17,7 @@
             </div>
             <div>
               <a
-                :href="`tel:${contact.telp}`"
+                :href="`tel:${contact.telp.split(' ').join('')}`"
                 target="_blank"
                 rel="noreferrer noopener"
                 class="text-base font-medium tracking-wide transition duration-300 ease-in-out sm:text-lg md:text-xl focus:outline-none focus:text-hijau hover:text-hijau"
@@ -119,6 +119,7 @@
 <script>
 export default {
   layout: 'nofooter',
+  transition: 'page',
   data() {
     return {
       contact: {

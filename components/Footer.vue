@@ -34,14 +34,14 @@
     >
       <a
         rel="noreferrer noopener"
-        :href="'tel:' + contact.telp"
+        :href="`tel:${contact.telp.split(' ').join('')}`"
         class="text-black transition duration-300 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau"
         >{{ contact.telp }}</a
       >
       <div>/</div>
       <a
         rel="noreferrer noopener"
-        :href="'mailto:' + contact.mail"
+        :href="`mailto:${contact.mail}`"
         class="text-black transition duration-300 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau"
         >{{ contact.mail }}</a
       >

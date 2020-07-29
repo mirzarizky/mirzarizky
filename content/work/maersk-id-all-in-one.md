@@ -5,7 +5,7 @@ image:
   thumbnail: work/maersk%20id%20all%20in%20one/maersk-id_mi4phe.jpg
   square: work/maersk%20id%20all%20in%20one/maersk-id-all-in-one-square_ejuwzx.jpg
 client: Maersk Indonesia
-year: 2019
+year: 2020
 prev: sipaud-id
 next: 
 ---

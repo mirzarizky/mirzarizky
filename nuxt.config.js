@@ -2,6 +2,7 @@ require('dotenv').config()
 
 const APP_TITLE = 'Mirza Rizky — Web Developer'
 export default {
+  target: 'static',
   env: {
     BASE_URL: process.env.BASE_URL,
     CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
@@ -82,7 +83,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/hamburgers.scss'],
+  css: ['@/assets/css/main.css', '@/assets/css/hamburgers.scss'],
   /*
    ** Plugins to load before mounting the App
    */

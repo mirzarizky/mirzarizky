@@ -11,7 +11,7 @@
         </div>
         <div class="order-first w-full md:order-last md:w-2/5">
           <img
-            class="self-auto flex-1 w-full max-w-lg mx-auto my-6 bg-opacity-25 md:ml-auto bg-hijau md:self-end min-w-screen"
+            class="self-auto flex-1 w-full max-w-lg mx-auto my-0 bg-opacity-25 md:my-6 md:ml-auto bg-hijau md:self-end min-w-screen"
             :src="cloudinary_url(about.image, 'fl_progressive')"
             alt="Mirza Rizky"
           />
@@ -58,7 +58,9 @@
         <div class="mb-2 text-sm text-gray-700 sm:text-base md:text-lg md:mb-5">
           skills —
         </div>
-        <div class="grid grid-cols-1 row-gap-5 col-gap-10 md:grid-cols-3">
+        <div
+          class="grid grid-cols-1 row-gap-5 col-gap-10 sm:grid-cols-2 md:grid-cols-3"
+        >
           <template v-for="skillName in skillSet">
             <div :key="skillName">
               <div

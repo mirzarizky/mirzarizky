@@ -15,8 +15,8 @@
           class="inline-flex"
         >
           <div>
-            👋🏻 Hi, I'm Mirza; a
-            <span class="typing">web developer.</span>
+            👋🏻 Hi, I'm Mirza;
+            <span class="typing">a web developer.</span>
           </div>
         </vue-typed-js>
       </div>
@@ -77,7 +77,12 @@ export default {
   },
   data() {
     return {
-      iam: ['indonesian.', 'coffee lover.', 'iron man.', 'web developer.'],
+      iam: [
+        'an indonesian.',
+        'a coffee lover.',
+        'an iron man.',
+        'a web developer.'
+      ],
       mail: process.env.CONTACT_MAIL
     }
   }

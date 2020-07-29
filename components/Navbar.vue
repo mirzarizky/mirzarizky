@@ -85,10 +85,10 @@
     <transition
       enter-active-class="transition-all duration-150 ease-out delay-100"
       leave-active-class="transition-all duration-150 ease-in delay-100"
-      enter-class="opacity-0 scale-70"
-      enter-to-class="scale-100 opacity-100"
-      leave-class="scale-100 opacity-100"
-      leave-to-class="opacity-0 scale-70"
+      enter-class="transform -translate-y-10 opacity-0 scale-70"
+      enter-to-class="transform scale-100 translate-y-0 opacity-100"
+      leave-class="transform scale-100 translate-y-0 opacity-100"
+      leave-to-class="transform -translate-y-10 opacity-0 scale-70"
     >
       <div
         v-if="isOpen"
