@@ -1,7 +1,8 @@
 require('dotenv').config()
 
 const APP_TITLE = 'Mirza Rizky — Web Developer'
-const BASE_URL = process.env.VERCEL_URL ?? process.env.BASE_URL
+const BASE_URL = process.env.VERCEL_URL || process.env.BASE_URL
+
 export default {
   target: 'static',
   env: {
