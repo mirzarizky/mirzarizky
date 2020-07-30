@@ -1,18 +1,15 @@
 <template>
   <div class="pt-10 xl:pt-20">
     <div class="max-w-screen-xl mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-3">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         <nuxt-link
           v-for="work in works"
           :key="work.slug"
+          v-lazy:background-image="
+            cloudinary_url(work.image.square, 'fl_progressive')
+          "
           :to="'work/' + work.slug"
           class="w-full h-64 bg-opacity-25 bg-center bg-cover bg-hijau focus:outline-none"
-          :style="{
-            backgroundImage: `url('${cloudinary_url(
-              work.image.square,
-              'fl_progressive'
-            )}')`
-          }"
         >
           <div
             class="flex flex-col items-center justify-center w-full h-full text-center lowercase transition duration-300 ease-in-out bg-opacity-0 bg-hijau hover:bg-opacity-75 group"

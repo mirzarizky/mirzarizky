@@ -11,8 +11,8 @@
         </div>
         <div class="order-first w-full md:order-last md:w-2/5">
           <img
+            v-lazy="cloudinary_url(about.image, 'fl_progressive')"
             class="self-auto flex-1 w-full max-w-lg mx-auto my-0 bg-opacity-25 md:my-6 md:ml-auto bg-hijau md:self-end min-w-screen"
-            :src="cloudinary_url(about.image, 'fl_progressive')"
             alt="Mirza Rizky"
           />
         </div>

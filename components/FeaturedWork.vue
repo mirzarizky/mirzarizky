@@ -7,7 +7,7 @@
     >
       <nuxt-link :to="'work/' + work.slug" class="focus:outline-none">
         <img
-          :src="cloudinary_url(work.image.thumbnail, 'fl_progressive')"
+          v-lazy="cloudinary_url(work.image.thumbnail, 'fl_progressive')"
           class="w-full my-2 bg-opacity-25 bg-hijau"
           :alt="work.title"
         />

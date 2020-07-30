@@ -2,7 +2,7 @@
   <div class="max-w-screen-xl mx-auto">
     <div class="px-4 pt-10 sm:px-10 xl:px-24">
       <img
-        :src="cloudinary_url(work.image.thumbnail, 'fl_progressive')"
+        v-lazy="cloudinary_url(work.image.thumbnail, 'fl_progressive')"
         class="w-full bg-opacity-25 bg-hijau"
         :alt="work.title"
       />
