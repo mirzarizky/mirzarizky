@@ -1,10 +1,11 @@
 require('dotenv').config()
 
 const APP_TITLE = 'Mirza Rizky — Web Developer'
+const BASE_URL = process.env.BASE_URL
 export default {
   target: 'static',
   env: {
-    BASE_URL: process.env.BASE_URL,
+    BASE_URL,
     CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
     CONTACT_TELP: process.env.CONTACT_TELP,
     CONTACT_MAIL: process.env.CONTACT_MAIL,
@@ -27,18 +28,18 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
-      { hid: 'url', name: 'url', content: process.env.BASE_URL },
+      { hid: 'url', name: 'url', content: BASE_URL },
       { hid: 'og:title', property: 'og:title', content: APP_TITLE },
       {
         hid: 'og:description',
         property: 'og:description',
         content: process.env.npm_package_description
       },
-      { hid: 'og:url', property: 'og:url', content: process.env.BASE_URL },
+      { hid: 'og:url', property: 'og:url', content: BASE_URL },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: `${process.env.BASE_URL}/social_meta.png`
+        content: `${BASE_URL}/social_meta.png`
       },
       {
         hid: 'og:site_name',
@@ -61,7 +62,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: `${process.env.BASE_URL}/social_meta.png`
+        content: `${BASE_URL}/social_meta.png`
       }
     ],
     link: [
@@ -69,7 +70,7 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: process.env.BASE_URL
+        href: BASE_URL
       }
     ],
     bodyAttrs: {
@@ -138,7 +139,7 @@ export default {
     }
   },
   sitemap: {
-    hostname: process.env.BASE_URL
+    hostname: BASE_URL
   },
   webfontloader: {
     google: {
