@@ -98,7 +98,13 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: process.env.GOOGLE_ANALYTICS_ID
+      }
+    ]
   ],
   /*
    ** Nuxt.js modules
@@ -108,7 +114,9 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
     'nuxt-webfontloader',
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/sentry'
   ],
   /*
    ** Build configuration
@@ -119,9 +127,25 @@ export default {
      */
     extend(config, ctx) {}
   },
+  generate: {
+    async routes() {
+      const { $content } = require('@nuxt/content')
+      const files = await $content('work')
+        .only(['path'])
+        .fetch()
+
+      return files.map((file) => (file.path === '/index' ? '/' : file.path))
+    }
+  },
+  sitemap: {
+    hostname: process.env.BASE_URL
+  },
   webfontloader: {
     google: {
       families: ['Work+Sans:400,500,600,700,800', 'Lora:400,500,600,700']
     }
+  },
+  sentry: {
+    dsn: process.env.SENTRY_DSN
   }
 }

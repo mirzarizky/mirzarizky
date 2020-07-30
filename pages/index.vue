@@ -14,10 +14,10 @@
           :start-delay="2500"
           class="inline-flex"
         >
-          <div>
+          <h1>
             👋🏻 Hi, I'm Mirza;
             <span class="typing">a web developer.</span>
-          </div>
+          </h1>
         </vue-typed-js>
       </div>
       <div class="text-base font-medium sm:text-lg md:text-xl">
