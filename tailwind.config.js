@@ -25,6 +25,7 @@ module.exports = {
     }
   },
   variants: {
+    animation: ['responsive', 'hover', 'group-hover'],
     alignSelf: ['responsive', 'even', 'odd', 'hover', 'focus'],
     borderColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
     borderWidth: ['responsive', 'hover', 'focus'],
