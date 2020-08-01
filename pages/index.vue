@@ -37,10 +37,13 @@
     >
       <a
         href="#featured-work"
-        class="text-base font-medium leading-none transition duration-150 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau sm:text-lg md:text-xl"
+        class="text-base font-medium leading-none transition duration-150 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau sm:text-lg md:text-xl group"
       >
         featured work
-        <svg class="inline-flex w-3 fill-current sm:w-4" viewBox="0 0 20 20">
+        <svg
+          class="inline-flex w-3 fill-current animate-none group-hover:animate-bounce sm:w-4"
+          viewBox="0 0 20 20"
+        >
           <path
             fill-rule="evenodd"
             d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z"
