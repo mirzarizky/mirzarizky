@@ -30,17 +30,24 @@ export default {
         content: process.env.npm_package_description || ''
       },
       { hid: 'url', name: 'url', content: BASE_URL },
-      { hid: 'og:title', property: 'og:title', content: APP_TITLE },
+      {
+        hid: 'og:title',
+        name: 'og:title',
+        property: 'og:title',
+        content: APP_TITLE
+      },
       {
         hid: 'og:description',
+        name: 'og:description',
         property: 'og:description',
         content: process.env.npm_package_description
       },
-      { hid: 'og:url', property: 'og:url', content: BASE_URL },
+      { hid: 'og:url', name: 'og:url', property: 'og:url', content: BASE_URL },
       {
         hid: 'og:image',
+        name: 'og:image',
         property: 'og:image',
-        content: `${BASE_URL}/social_meta.png`
+        content: `${BASE_URL}/preview.png`
       },
       {
         hid: 'og:site_name',
@@ -63,7 +70,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: `${BASE_URL}/social_meta.png`
+        content: `${BASE_URL}/preview.png`
       }
     ],
     link: [
