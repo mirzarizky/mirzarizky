@@ -8,13 +8,7 @@
 </template>
 
 <script>
-import Navbar from '~/components/Navbar'
-
-export default {
-  components: {
-    Navbar
-  }
-}
+export default {}
 </script>
 
 <style>

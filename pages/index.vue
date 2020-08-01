@@ -60,12 +60,7 @@
 </template>
 
 <script>
-import FeaturedWork from '~/components/FeaturedWork'
-
 export default {
-  components: {
-    FeaturedWork
-  },
   async asyncData({ $content }) {
     const featuredWorks = await $content('work')
       .only(['title', 'slug', 'client', 'image'])

@@ -136,7 +136,9 @@ export default {
      */
     extend(config, ctx) {}
   },
+  components: true,
   generate: {
+    fallback: '404.html',
     async routes() {
       const { $content } = require('@nuxt/content')
       const files = await $content('work')

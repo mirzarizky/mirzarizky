@@ -6,7 +6,7 @@
       <!-- nav menu -->
       <div class="flex items-center space-x-0 sm:space-x-8">
         <div class="mr-0 sm:mr-3">
-          <logo />
+          <app-logo />
         </div>
 
         <nuxt-link
@@ -123,12 +123,12 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo'
+// import Logo from '~/components/Logo'
 
 export default {
-  components: {
-    Logo
-  },
+  // components: {
+  //   Logo
+  // },
   data() {
     return {
       isOpen: false,
