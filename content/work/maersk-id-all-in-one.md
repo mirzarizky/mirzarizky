@@ -24,13 +24,12 @@ A web and mobile app that is capable of handling a variety of tasks that are rel
 #### My role
 Backend and frontend(web) development
 
-
 #### Team members
 - [Ibam Maulana](https://instagram.com/ibamaulana)
 - [Yochanan Maranatha](https://instagram.com/yochanojisan)
 
 #### Technology stack
-Laravel, Vue, MySQL, Nginx, Redis, Socket.io
+Laravel, Vue, MySQL, Nginx, Redis, Socket.io, Flutter
 
 #### The app
 [https://play.google.com/store/apps/details?id=id.vantura.maersk.client](https://play.google.com/store/apps/details?id=id.vantura.maersk.client)<br/>

@@ -8,4 +8,4 @@ The very first website I made was a static site for school project built with HT
 
 When I'm not doing my code, I enjoy watching anime, TV-series, K-drama, and listening to podcast.
 
-This website is built using NuxtJS and TailwindCSS. Hosted on Netlify, an all-in-one platform that makes hosting static websites as well as other modern web projects incredibly easy. 
+This website is built using NuxtJS and TailwindCSS. Hosted on Vercel.
