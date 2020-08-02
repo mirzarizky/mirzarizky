@@ -34,4 +34,4 @@ Laravel, Vue, MySQL, Nginx, Redis, Socket.io
 
 #### The app
 [https://play.google.com/store/apps/details?id=id.vantura.maersk.client](https://play.google.com/store/apps/details?id=id.vantura.maersk.client)<br/>
-*Client may have made changes to the original design*
+<small>*Client may have made changes to the original design*</small>
