@@ -36,7 +36,8 @@
       class="px-4 my-10 text-left md:text-center lg:text-left xl:my-24 sm:px-10 xl:px-24"
     >
       <a
-        href="#featured-work"
+        v-scroll-to="'#featured-work'"
+        href="#"
         class="text-base font-medium leading-none transition duration-150 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau sm:text-lg md:text-xl group"
       >
         featured work

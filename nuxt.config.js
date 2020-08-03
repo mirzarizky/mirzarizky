@@ -125,7 +125,8 @@ export default {
     'nuxt-webfontloader',
     '@nuxt/content',
     '@nuxtjs/sitemap',
-    '@nuxtjs/sentry'
+    '@nuxtjs/sentry',
+    'vue-scrollto/nuxt'
   ],
   /*
    ** Build configuration
