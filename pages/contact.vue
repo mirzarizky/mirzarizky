@@ -10,7 +10,7 @@
         For any enquiries or just to say hello, get in touch and contact me.
       </div>
       <div class="w-full my-10 xl:my-24 sm:w-3/4">
-        <div class="grid grid-cols-1 row-gap-5 sm:row-gap-10 md:grid-cols-2">
+        <div class="grid grid-cols-1 gap-y-5 sm:gap-y-10 md:grid-cols-2">
           <div class="flex flex-col space-y-1">
             <div class="text-sm font-medium lowercase sm:text-base md:text-lg">
               Phone

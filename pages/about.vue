@@ -59,7 +59,7 @@
           skills —
         </div>
         <div
-          class="grid grid-cols-1 row-gap-5 col-gap-10 sm:grid-cols-2 md:grid-cols-3"
+          class="grid grid-cols-1 gap-y-5 gap-x-10 sm:grid-cols-2 md:grid-cols-3"
         >
           <template v-for="skillName in skillSet">
             <div :key="skillName">
