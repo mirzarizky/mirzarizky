@@ -1,22 +1,23 @@
-# mirzarizkyme
+### Hi there, I'm [Mirza](https://mirzarizky.me)! 👋
 
-> My portfolio site
+Hi, I'm Mirza Rizky, a passionate web developer from Indonesia.
+- 🖼 I'm currently learning GraphQL
+- 🤝 I'm currently open for freelance or project-based work
 
-## Build Setup
+** Technology Stacks **
+<code><img height="20" src="docs/assets/php.svg"></code>
+<code><img height="20" src="docs/assets/laravel.svg"></code>
+<code><img height="20" src="docs/assets/mysql.svg"></code>
+<code><img height="20" src="docs/assets/graphql.svg"></code>
+<code><img height="20" src="docs/assets/javascript.svg"></code>
+<code><img height="20" src="docs/assets/vue-dot-js.svg"></code>
+<code><img height="20" src="docs/assets/css3.svg"></code>
+<code><img height="20" src="docs/assets/bootstrap.svg"></code>
+<code><img height="20" src="docs/assets/tailwindcss.svg"></code>
+<code><img height="20" src="docs/assets/docker.svg"></code>
 
-```bash
-# install dependencies
-$ npm install
+** Software **
+<code><img height="20" src="docs/assets/visualstudiocode.svg"></code>
+<code><img height="20" src="docs/assets/gitkraken.svg"></code>
+<code><img height="20" src="docs/assets/figma.svg"></code>
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
