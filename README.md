@@ -1,11 +1,10 @@
-### Hi there, I'm [Mirza](https://mirzarizky.me)! 👋
+### [Mirza Rizky](https://mirzarizky.me)! 👋
 
-Hi, I'm Mirza Rizky, a passionate web developer from Indonesia.
-- 🖼 I'm currently learning GraphQL
+Hi, I'm Mirza Rizky, a passionate web developer from Indonesia. I make web applications, usually with Laravel and Vue.
+- 🖼 I'm currently learning GraphQL and Vue/Nuxt
 - 🤝 I'm currently open for freelance or project-based work
 
-**My Technology Stacks**
-
+### Technology Stacks
 <code><img height="20" sty src="docs/assets/php.svg"></code>
 <code><img height="20" src="docs/assets/laravel.svg"></code>
 <code><img height="20" src="docs/assets/mysql.svg"></code>
@@ -18,8 +17,7 @@ Hi, I'm Mirza Rizky, a passionate web developer from Indonesia.
 <code><img height="20" src="docs/assets/tailwindcss.svg"></code>
 <code><img height="20" src="docs/assets/docker.svg"></code>
 
-**Software**
-
+### Software
 <code><img height="20" src="docs/assets/visualstudiocode.svg"></code>
 <code><img height="20" src="docs/assets/gitkraken.svg"></code>
 <code><img height="20" src="docs/assets/figma.svg"></code>
