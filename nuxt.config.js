@@ -15,7 +15,6 @@ export default {
     SOCIAL_INSTAGRAM_URL: process.env.SOCIAL_INSTAGRAM_URL,
     SOCIAL_GITHUB_URL: process.env.SOCIAL_GITHUB_URL
   },
-  mode: 'universal',
   /*
    ** Headers of the page
    */
