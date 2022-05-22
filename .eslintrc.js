@@ -1,23 +1,15 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
-    node: true
-  },
-  parserOptions: {
-    parser: 'babel-eslint'
+    'vue/setup-compiler-macros': true,
   },
   extends: [
-    '@nuxtjs',
-    'prettier',
-    'prettier/vue',
+    '@nuxtjs/eslint-config-typescript',
+    'plugin:nuxt/recommended',
     'plugin:prettier/recommended',
-    'plugin:nuxt/recommended'
-  ],
-  plugins: [
-    'prettier'
   ],
   // add your custom rules here
   rules: {
-  }
+    'vue/multi-word-component-names': 'off',
+  },
 }

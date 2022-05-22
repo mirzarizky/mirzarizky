@@ -2,7 +2,7 @@
   <div
     class="flex flex-col items-center justify-between px-3 py-6 space-y-1 border-t border-black sm:py-8 sm:space-y-0 sm:border-t-2 xl:px-1 sm:flex-row"
   >
-    <nuxt-link
+    <NuxtLink
       to="/contact"
       class="flex items-center space-x-4 focus:outline-none"
     >
@@ -27,7 +27,7 @@
           />
         </svg>
       </div>
-    </nuxt-link>
+    </NuxtLink>
 
     <div
       class="flex items-center space-x-1 text-sm font-medium tracking-normal sm:tracking-tight sm:text-base md:text-lg"
@@ -36,28 +36,23 @@
         rel="noreferrer noopener"
         :href="`tel:${contact.telp.split(' ').join('')}`"
         class="text-black transition duration-300 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau"
-        >{{ contact.telp }}</a
       >
+        {{ contact.telp }}
+      </a>
       <div>/</div>
       <a
         rel="noreferrer noopener"
         :href="`mailto:${contact.mail}`"
         class="text-black transition duration-300 ease-in-out focus:outline-none focus:text-hijau hover:text-hijau"
-        >{{ contact.mail }}</a
       >
+        {{ contact.mail }}
+      </a>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      contact: {
-        telp: process.env.CONTACT_TELP,
-        mail: process.env.CONTACT_MAIL
-      }
-    }
-  }
-}
+<script setup>
+const config = useRuntimeConfig()
+
+const { contact } = config.public
 </script>

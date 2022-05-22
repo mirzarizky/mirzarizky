@@ -133,13 +133,13 @@ export default {
     return {
       isOpen: false,
       github_url: process.env.SOCIAL_GITHUB_URL,
-      linkedin_url: process.env.SOCIAL_LINKEDIN_URL
+      linkedin_url: process.env.SOCIAL_LINKEDIN_URL,
     }
   },
   methods: {
     visit() {
       this.$nextTick(() => (this.isOpen = false))
-    }
-  }
+    },
+  },
 }
 </script>
