@@ -30,6 +30,15 @@ module.exports = {
     },
   },
 
+  corePlugins: {
+    textOpacity: false,
+    backgroundOpacity: false,
+    borderOpacity: false,
+    divideOpacity: false,
+    placeholderOpacity: false,
+    ringOpacity: false,
+  },
+
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/forms'),

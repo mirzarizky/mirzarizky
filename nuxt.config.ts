@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@nuxtjs/color-mode',
     TypedRouter,
+    '@nuxt/content',
     '@nuxtjs/tailwindcss',
   ],
   runtimeConfig: {
@@ -26,6 +27,7 @@ export default defineNuxtConfig({
     },
   },
   colorMode: {
+    preference: 'light',
     classSuffix: '',
   },
   nuxtTypedRouter: {

@@ -1,8 +1,8 @@
-import { useStore } from '~~/store/auth'
+import { useAuthStore } from '~~/store/auth'
 import { computed } from 'vue'
 
 export const useAuth = () => {
-  const store = useStore()
+  const store = useAuthStore()
 
   const isLoggedin = computed(() => store.isLoggedin)
 
@@ -13,9 +13,7 @@ export const useAuth = () => {
   }
 
   function logout() {
-    store.$patch(state => {
-      state.isLoggedin = false
-    })
+    store.clearLogin()
   }
 
   return { isLoggedin, login, logout }
